@@ -19,6 +19,16 @@ namespace WpfApp1
 		public MainWindow()
 		{
 			InitializeComponent();
+			var label = new Label
+			{
+				Content = "Hello World",
+				HorizontalAlignment = HorizontalAlignment.Center,
+				VerticalAlignment = VerticalAlignment.Center
+			};
+
+			// Add the Label to the MainWindow's content
+			Content = label;
+
 		}
 	}
 }
